@@ -1,0 +1,36 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+    /* Color */
+    --white: #FFF;
+    --grey-light: #F3F3F3;
+    --grey-dark: #9B9BA3;
+    --blue: #87C6BD;
+    --black: #1D1D1F;
+
+    --max-width: 1200px;
+    --fs: 16px;
+}
+
+/* Global Style */
+body {
+    background-color: var(--white);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+/* Utility Classes */
+/* Custom Style */
