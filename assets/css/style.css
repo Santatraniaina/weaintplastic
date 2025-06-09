@@ -18,9 +18,45 @@
     --fs: 16px;
 }
 
+/* Typography */
+@font-face {
+    font-family: 'Oak Bold';
+    src: url('../fonts/oak-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oak Light';
+    src: url('../fonts/oak-light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Plantin Light';
+    src: url('../fonts/plantin-light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oak Bold', sans-serif;
+    color: var(--black);
+}
+
+p {
+    font-family: 'Plantin Light', serif;
+    color: var(--grey-dark);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
 /* Global Style */
 body {
     background-color: var(--white);
+    font-family: 'Oak Bold', sans-serif;
 }
 
 li {
@@ -33,4 +69,5 @@ a {
 }
 
 /* Utility Classes */
+
 /* Custom Style */
