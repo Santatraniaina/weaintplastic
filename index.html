@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header bg--white">
         <nav class="navbar">
             <ul class="navbar__list">
                 <li class="navbar__item"><a href="#gems">Gems</a></li>
@@ -18,12 +18,10 @@
                 <li class="navbar__item"><a href="#workflow">Workflow</a></li>
                 <li class="navbar__item"><a href="#contact">Contact</a></li>
             </ul>
-            <div class=navbar__menu">
-                <button class="hamburger-menu">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </button>
+            <div class="navbar__menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </nav>
     </header>
@@ -34,7 +32,7 @@
 
     <main class="main-content">
         <section class="hero">
-            <h1 class="hero-title">WE AIN'T PLASTIC</h1>
+            <img src="./assets/images/logos/logo.svg" alt="Logo" class="logo"/>
             <img class="hero-image" src="./assets/images/gem-textured.png" alt="Gems"/>
         </section>
 
@@ -261,8 +259,12 @@
         </section>
 
         <section id="workflow" class="section">
-            <img src="./assets/images/workflow-headline.svg" alt="Workflow Headline"/>
-            <img src="./assets/images/workflow.svg" alt="Workflow Process"/>
+            <h2 class="section__title">Workflow</h2>
+
+            <div class="section__content">
+                <img src="./assets/images/workflow-headline.svg" alt="Workflow Headline"/>
+                <img src="./assets/images/workflow.svg" alt="Workflow Process"/>
+            </div>
         </section>
 
         <section id="contact" class="section">

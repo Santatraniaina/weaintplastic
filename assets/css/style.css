@@ -35,8 +35,8 @@
 :root {
     /* Colors */
     --white: #FFF;
-    --grey-light: #F3F3F3;
-    --grey-dark: #9B9BA3;
+    --light-grey: #F3F3F3;
+    --dark-grey: #9B9BA3;
     --blue: #87C6BD;
     --black: #1D1D1F;
 
@@ -55,6 +55,9 @@
 body {
     background-color: var(--white);
     font-family: var(--ff-primary);
+    font-size: var(--fs-base);
+    color: var(--black);
+    scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -80,6 +83,72 @@ a {
 
 
 /* Utility Classes */
+.bg--white {
+    background-color: var(--white);
+}
+
+.bg--light-grey {
+    background-color: var(--light-grey);
+}
+
+.bg--dark-grey {
+    background-color: var(--dark-grey);
+}
+
+.bg--blue {
+    background-color: var(--blue);
+}
 
 
 /* Custom Style */
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+.navbar__list {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    .navbar__item a {
+        display: inline-block;
+        text-transform: uppercase;
+        font-family: var(--ff-bold);
+        font-size: .875rem;
+        letter-spacing: .125rem;
+
+        &:hover, &:active {
+            color: var(--blue);
+        }
+    }
+}
+
+.navbar__menu {
+    --bar-height: 3px;
+    --bar-width: 30px;
+
+    width: var(--bar-width);
+    display: flex;
+    flex-direction: column;
+    gap: calc(2px + var(--bar-height));
+    cursor: pointer;
+    position: fixed;
+    right: var(--bar-width);
+
+    > .bar {
+        display: block;
+        height: var(--bar-height);
+        width: var(--bar-width);
+        background-color: var(--black);
+    }
+}
