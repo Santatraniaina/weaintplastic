@@ -1,22 +1,12 @@
 /* Reset */
-* {
-    margin: 0;
-    padding: 0;
+*,
+*:before,
+*:after {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-/* Variables */
-:root {
-    /* Color */
-    --white: #FFF;
-    --grey-light: #F3F3F3;
-    --grey-dark: #9B9BA3;
-    --blue: #87C6BD;
-    --black: #1D1D1F;
-
-    --max-width: 1200px;
-    --fs: 16px;
-}
 
 /* Typography */
 @font-face {
@@ -40,23 +30,43 @@
     font-style: normal;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Oak Bold', sans-serif;
-    color: var(--black);
-}
 
-p {
-    font-family: 'Plantin Light', serif;
-    color: var(--grey-dark);
-    font-size: 1rem;
-    line-height: 1.5;
+/* Variables */
+:root {
+    /* Colors */
+    --white: #FFF;
+    --grey-light: #F3F3F3;
+    --grey-dark: #9B9BA3;
+    --blue: #87C6BD;
+    --black: #1D1D1F;
+
+    /* Fonts */
+    --ff-bold: 'Oak Bold', sans-serif;
+    --ff-primary: 'Oak Light', sans-serif;
+    --ff-secondary: 'Plantin Light', sans-serif;
+    --fs-base: 16px;
+
+    /* Spacing & Sizing */
+    --max-width: 1200px;
 }
 
 
 /* Global Style */
 body {
     background-color: var(--white);
-    font-family: 'Oak Bold', sans-serif;
+    font-family: var(--ff-primary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--ff-bold);
+    color: var(--black);
+}
+
+p {
+    font-family: var(--ff-secondary);
+    color: var(--grey-dark);
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 li {
@@ -68,6 +78,8 @@ a {
     color: var(--black);
 }
 
+
 /* Utility Classes */
+
 
 /* Custom Style */

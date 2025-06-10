@@ -10,16 +10,16 @@
 <body>
     <header class="header">
         <nav class="navbar">
-            <ul class="nav-list">
-                <li class="nav-item"><a href="#gems">Gems</a></li>
-                <li class="nav-item"><a href="#work">Work</a></li>
-                <li class="nav-item"><a href="#letters">Letters</a></li>
-                <li class="nav-item"><a href="#profile">Profile</a></li>
-                <li class="nav-item"><a href="#workflow">Workflow</a></li>
-                <li class="nav-item"><a href="#contact">Contact</a></li>
+            <ul class="navbar__list">
+                <li class="navbar__item"><a href="#gems">Gems</a></li>
+                <li class="navbar__item"><a href="#work">Work</a></li>
+                <li class="navbar__item"><a href="#letters">Letters</a></li>
+                <li class="navbar__item"><a href="#profile">Profile</a></li>
+                <li class="navbar__item"><a href="#workflow">Workflow</a></li>
+                <li class="navbar__item"><a href="#contact">Contact</a></li>
             </ul>
-            <div class="hamburger-menu">
-                <button class="hamburger-button">
+            <div class=navbar__menu">
+                <button class="hamburger-menu">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -39,9 +39,9 @@
         </section>
 
         <section id="gems" class="section">
-            <h2 class="section-title">Gems</h2>
+            <h2 class="section__title">Gems</h2>
 
-            <div class="section-content">
+            <div class="section__content">
                 <ul class="">
                     <li>Product Design</li>
                     <li>UX Design</li>
@@ -83,53 +83,53 @@
         </section>
 
         <section id="work" class="section">
-            <h2 class="section-title">Work</h2>
+            <h2 class="section__title">Work</h2>
 
-            <ul class="section-content work-list">
-                <li class="work-item">
-                    <a href="#" class="work-link">
+            <ul class="section__content work">
+                <li class="work__item">
+                    <a href="#" class="work__link">
                         <h4>Expedia Meeting Market</h4>
                         <h6>Onboarding</h6>
                     </a>
                 </li>
-                <li class="work-item">
-                    <a href="#" class="work-link">
+                <li class="work__item">
+                    <a href="#" class="work__link">
                         <h4>Atomic</h4>
                         <h6>Relaunch</h6>
                     </a>
                 </li>
-                <li class="work-item">
-                    <a href="#" class="work-link">
+                <li class="work__item">
+                    <a href="#" class="work__link">
                         <h4>Melanie Daveid</h4>
                         <h6>Portfolio</h6>
                     </a>
                 </li>
-                <li class="work-item">
-                    <a href="#" class="work-link">
+                <li class="work__item">
+                    <a href="#" class="work__link">
                         <h4>Austria Summer Moments</h4>
                         <h6>Global Campaign Website</h6>
                     </a>
                 </li>
-                <li class="work-item">
-                    <a href="#" class="work-link">
+                <li class="work__item">
+                    <a href="#" class="work__link">
                         <h4>Row Flow</h4>
                         <h6>Frontend Framework</h6>
                     </a>
                 </li>
-                <li class="work-item">
-                    <a href="#" class="work-link">
+                <li class="work__item">
+                    <a href="#" class="work__link">
                         <h4>Digging in the Crates</h4>
                         <h6>Interactive Installation</h6>
                     </a>
                 </li>
-                <li class="work-item">
-                    <a href="#" class="work-link">
+                <li class="work__item">
+                    <a href="#" class="work__link">
                         <h4>Infinity Car Configurator</h4>
                         <h6>Proof of Concept</h6>
                     </a>
                 </li>
-                <li class="work-item">
-                    <a href="#" class="work-link">
+                <li class="work__item">
+                    <a href="#" class="work__link">
                         <h4>Web Fundamentals</h4>
                         <h6>Field Guide</h6>
                     </a>
@@ -138,122 +138,122 @@
         </section>
 
         <section id="letters" class="section">
-            <h2 class="section-title">Letters</h2>
+            <h2 class="section__title">Letters</h2>
 
-            <div class="section-content">
-                <article class="letter-item best-letter" data-before="99" data-after="66">
-                    <span class="h6 letter-category">Creative Management</span>
-                    <span class="h1 letter-title uppercase">
+            <div class="section__content">
+                <article class="letter letter--most-read" data-before="99" data-after="66">
+                    <span class="h6 letter__category">Creative Management</span>
+                    <span class="h1 letter__title uppercase">
                         Let me be your rubber duck
                     </span>
                 </article>
 
-                <article class="letter-item">
-                    <span class="h6 letter-category">Workflow Management</span>
-                    <span class="h3 letter-title">
+                <article class="letter">
+                    <span class="h6 letter__category">Workflow Management</span>
+                    <span class="h3 letter__title">
                         Developers ain't slow
                     </span>
-                    <p class="letter-content">
+                    <p class="letter__content">
                         Finding themselves at the end of the production chaon, developers tend to turn into slow and frustrated beasts.
                     </p>
-                    <a href="#" class="h6 read-more">- Read</a>
+                    <a href="#" class="h6 letter__more">- Read</a>
                 </article>
 
-                <article class="letter-item">
-                    <span class="h6 letter-category">UX Design / Prototype</span>
-                    <span class="h3 letter-title">
+                <article class="letter">
+                    <span class="h6 letter__category">UX Design / Prototype</span>
+                    <span class="h3 letter__title">
                         A two level menu approach for mobile
                     </span>
-                    <p class="letter-content">
+                    <p class="letter__content">
                         Recently I've worked on a pretty complex information architecture. Tryout a prototype I've created for the mobile version of the menu.
                     </p>
-                    <a href="#" class="h6 read-more">- Read</a>
+                    <a href="#" class="h6 letter__more">- Read</a>
                 </article>
 
-                <article class="letter-item">
-                    <span class="h6 letter-category">UX Design / Prototype</span>
-                    <span class="h3 letter-title">
+                <article class="letter">
+                    <span class="h6 letter__category">UX Design / Prototype</span>
+                    <span class="h3 letter__title">
                         Pull-to-Return - A new interaction pattern?
                     </span>
-                    <p class="letter-content">
+                    <p class="letter__content">
                         Recently I stumbled upon feedly's design rework and I've found a pretty neat interaction I'd love to share with you as a prototype.
                     </p>
-                    <a href="#" class="h6 read-more">- Read</a>
+                    <a href="#" class="h6 letter__more">- Read</a>
                 </article>
 
-                <article class="letter-item">
-                    <span class="h6 letter-category">UX Design / Development</span>
-                    <span class="h3 letter-title">
+                <article class="letter">
+                    <span class="h6 letter__category">UX Design / Development</span>
+                    <span class="h3 letter__title">
                         Unveiled-Sticky-Navigation - Released as a jQuery Plugin
                     </span>
-                    <p class="letter-content">
+                    <p class="letter__content">
                         The navigation of <i>medium.com</i> examined, enhanced and published as a jQuery plugin.
                     </p>
-                    <a href="#" class="h6 read-more">- Read</a>
+                    <a href="#" class="h6 letter__more">- Read</a>
                 </article>
             </div>
         </section>
 
         <section id="profile" class="section">
-            <h2 class="section-title">Profile</h2>
+            <h2 class="section__title">Profile</h2>
 
-            <div class="section-content">
+            <div class="section__content">
                 <p>
                     During my studies of Multimedia at the University of Applied Sciences in Augsburg, Germany, I adopted a greater sense for the correlation of design and technology and ever since I create digital products with knowledge and care.
                 </p>
 
-                <ul class="success-list">
-                    <li class="success-item">
-                        <h6 class="awards">Awards</h6>
-                        <ul class="awards-list">
-                            <li class="award-item">
-                                <span class="h6 award-event">Awwwards - Site of the Day</span>
-                                <span class="italic award-title">Melanie Daveid</span>
+                <ul class="success">
+                    <li class="success__list">
+                        <h6 class="success__title">Awards</h6>
+                        <ul class="success__item">
+                            <li class="item">
+                                <span class="h6 item__title">Awwwards - Site of the Day</span>
+                                <span class="italic item__description">Melanie Daveid</span>
                             </li>
 
-                            <li class="award-item">
-                                <span class="h6 award-event">Awwwards - Site of the Day</span>
-                                <span class="italic award-title">Austria Moments</span>
+                            <li class="item">
+                                <span class="h6 item__title">Awwwards - Site of the Day</span>
+                                <span class="italic item__description">Austria Moments</span>
                             </li>
 
-                            <li class="award-item">
-                                <span class="h6 award-event">18th Inforgraphic Summit</span>
-                                <span class="italic award-title">Silver for Digging in the Crates</span>
+                            <li class="item">
+                                <span class="h6 item__title">18th Inforgraphic Summit</span>
+                                <span class="italic item__description">Silver for Digging in the Crates</span>
                             </li>
 
-                            <li class="award-item">
-                                <span class="h6 award-event">17th Inforgraphic Summit</span>
-                                <span class="italic award-title">Silver for Synoptic</span>
+                            <li class="item">
+                                <span class="h6 item__title">17th Inforgraphic Summit</span>
+                                <span class="italic item__description">Silver for Synoptic</span>
                             </li>
                         </ul>
                     </li>
-                    <li class="success-item">
-                        <h6 class="books">Books & Magazines</h6>
-                        <ul class="book-list">
-                            <li class="book-item">
-                                <span class="h6 book-title">A touch of code</span>
-                                <span class="italic book-author">Gestalten</span>
+                    <li class="success__list">
+                        <h6 class="success__title">Books & Magazines</h6>
+                        <ul class="success__item">
+                            <li class="item">
+                                <span class="h6 item__title">A touch of code</span>
+                                <span class="italic item__description">Gestalten</span>
                             </li>
-                            <li class="book-item">
-                                <span class="h6 book-title">Visual Storytelling</span>
-                                <span class="italic book-author">Gestalten</span>
+                            <li class="item">
+                                <span class="h6 item__title">Visual Storytelling</span>
+                                <span class="italic item__description">Gestalten</span>
                             </li>
-                            <li class="book-item">
-                                <span class="h6 book-title">Diagraphics</span>
-                                <span class="italic book-author">Harper Design</span>
+                            <li class="item">
+                                <span class="h6 item__title">Diagraphics</span>
+                                <span class="italic item__description">Harper Design</span>
                             </li>
                         </ul>
                     </li>
-                    <li class="success-item">
-                        <h6 class="press">Online Press</h6>
-                        <ul class="press-list">
-                            <li class="press-item h6">Awwwards</li>
-                            <li class="press-item h6">Design Muzli</li>
-                            <li class="press-item h6">Designer News</li>
-                            <li class="press-item h6">Design Made in Germany</li>
-                            <li class="press-item h6">Creative Applications</li>
-                            <li class="press-item h6">Good Magazine</li>
-                            <li class="press-item h6">Digital in Berlin</li>
+                    <li class="success__list">
+                        <h6 class="success__title">Online Press</h6>
+                        <ul class="success__item">
+                            <li class="item item--title-only">Awwwards</li>
+                            <li class="item item--title-only">Design Muzli</li>
+                            <li class="item item--title-only">Designer News</li>
+                            <li class="item item--title-only">Design Made in Germany</li>
+                            <li class="item item--title-only">Creative Applications</li>
+                            <li class="item item--title-only">Good Magazine</li>
+                            <li class="item item--title-only">Digital in Berlin</li>
                         </ul>
                     </li>
                 </ul>
@@ -266,47 +266,47 @@
         </section>
 
         <section id="contact" class="section">
-            <h2 class="section-title">Contact</h2>
+            <h2 class="section__title">Contact</h2>
 
-            <div class="section-content">
-                <a href="mailto:info@weaintplastic.com" class="contact-email">
+            <div class="section__content">
+                <a href="mailto:info@weaintplastic.com" class="contact__email">
                     info@weaintplastic.com
                 </a>
 
-                <ul class="social-media">
-                    <li class="social-item">
+                <ul class="social__media">
+                    <li class="social__link">
                         <a href="#">
                             <img src="./assets/images/logos/logo-twitter.svg" alt="Twitter"/>
                         </a>
                     </li>
-                    <li class="social-item">
+                    <li class="social__link">
                         <a href="#">
                             <img src="./assets/images/logos/logo-codepen.svg" alt="Codepen"/>
                         </a>
                     </li>
-                    <li class="social-item">
+                    <li class="social__link">
                         <a href="#">
                             <img src="./assets/images/logos/logo-github.svg" alt="Github"/>
                         </a>
                     </li>
-                    <li class="social-item">
+                    <li class="social__link">
                         <a href="#">
                             <img src="./assets/images/logos/logo-medium.svg" alt="Medium"/>
                         </a>
                     </li>
-                    <li class="social-item">
+                    <li class="social__link">
                         <a href="#">
                             <img src="./assets/images/logos/logo-linkedin.svg" alt="LinkedIn"/>
                         </a>
                     </li>
-                    <li class="social-item">
+                    <li class="social__link">
                         <a href="#">
                             <img src="./assets/images/logos/logo-xing.svg" alt="Xing"/>
                         </a>
                     </li>
                 </ul>
 
-                <a href="#imprint" class="button">
+                <a href="#imprint" class="button button--primary">
                     Imprint
                 </a>
             </div>
