@@ -99,8 +99,13 @@ a {
     background-color: var(--blue);
 }
 
+.hidden {
+    display: none;
+}
+
 
 /* Custom Style */
+/* HEADER */
 .header {
     position: fixed;
     width: 100%;
@@ -150,5 +155,31 @@ a {
         height: var(--bar-height);
         width: var(--bar-width);
         background-color: var(--black);
+    }
+}
+
+/* MAIN */
+.section {
+    margin: 0 auto;
+    max-width: var(--max-width);
+}
+
+/* TODO: Make the center depending on vh size */
+.section--hero {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10dvh;
+
+    .hero__logo {
+        height: 57px;
+        width: 200px;
+    }
+
+    .hero__image {
+        width: 280px;
+        height: 475px;
     }
 }
