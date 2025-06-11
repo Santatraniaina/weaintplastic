@@ -26,7 +26,7 @@
 @font-face {
     font-family: 'Plantin Light';
     src: url('../fonts/plantin-light.ttf') format('truetype');
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -43,7 +43,7 @@
     /* Fonts */
     --ff-bold: 'Oak Bold', sans-serif;
     --ff-primary: 'Oak Light', sans-serif;
-    --ff-secondary: 'Plantin Light', sans-serif;
+    --ff-secondary: 'Plantin Light', serif;
     --fs-base: 16px;
 
     /* Spacing & Sizing */
@@ -67,9 +67,12 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
     font-family: var(--ff-secondary);
-    color: var(--grey-dark);
+    font-weight: 400;
+    color: var(--dark-grey);
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 1.85rem;
+    letter-spacing: .05rem;
+    margin-bottom: 1rem;
 }
 
 li {
@@ -162,15 +165,16 @@ a {
 .section {
     margin: 0 auto;
     max-width: var(--max-width);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4.5rem 0;
 }
 
 /* TODO: Make the center depending on vh size */
 .section--hero {
     height: 100dvh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 10dvh;
 
     .hero__logo {
@@ -181,5 +185,83 @@ a {
     .hero__image {
         width: 280px;
         height: 475px;
+    }
+}
+
+.section__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* TODO : Animate this for later */
+.letter--animated {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.25rem;
+    letter-spacing: 1rem;
+
+    &:after {
+        content: '';
+        display: block;
+        width: 6rem;
+        height: 4px;
+        background-color: var(--black);
+        margin-top: 4.5rem;
+        margin-bottom: 4.5rem;
+        margin-left: -1rem;
+    }
+}
+
+.section__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.service {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: .625rem;
+    gap: .625rem;
+
+    .service__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: .625rem;
+        font-family: var(--ff-bold);
+        font-size: .875rem;
+
+        /* TODO : Delete this for later */
+        width: 150px;
+        height: 125px;
+    }
+}
+
+.bio {
+    padding: 2.5rem .625rem;
+    display: flex;
+
+    .bio__intro {
+        font-family: var(--ff-secondary);
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        text-align: right;
+
+        flex: 1;
+        padding: 1.25rem;
+        width: 30%;
+    }
+
+    .bio__description {
+        flex: 2;
+        padding: 1.25rem;
+        column-count: 2;
+        column-gap: 2rem;
     }
 }
