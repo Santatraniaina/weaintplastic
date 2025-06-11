@@ -46,6 +46,8 @@
     --ff-secondary: 'Plantin Light', serif;
     --fs-base: 16px;
 
+    /* 10, 14, 16, 20, 22, 24 */
+
     /* Spacing & Sizing */
     --max-width: 1200px;
 }
@@ -68,7 +70,6 @@ h1, h2, h3, h4, h5, h6 {
 p {
     font-family: var(--ff-secondary);
     font-weight: 400;
-    color: var(--dark-grey);
     font-size: 1rem;
     line-height: 1.85rem;
     letter-spacing: .05rem;
@@ -106,20 +107,49 @@ a {
     display: none;
 }
 
-.h4 {
+.h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: var(--ff-bold);
+    line-height: 1.428em;
+}
+
+.h1 {
+    font-size: 3rem;
+}
+
+.h2 {
+
+}
+
+.h3 {
+    font-size: 1.5rem;
+    letter-spacing: .025rem;
+
+}
+
+.h4 {
     font-size: 1.25rem;
     letter-spacing: .1rem;
 }
 
 .h6 {
-    font-family: var(--ff-bold);
     font-size: .75rem;
     letter-spacing: .15em;
 }
 
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-black {
+    color: var(--black);
+}
+
 .text-blue {
     color: var(--blue);
+}
+
+.text-grey {
+    color: var(--dark-grey);
 }
 
 
@@ -284,7 +314,7 @@ a {
     }
 }
 
-.work {
+.works {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem 6rem;
@@ -303,5 +333,77 @@ a {
     > span {
         display: block;
         position: relative;
+    }
+}
+
+.letters {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.letter {
+    align-self: stretch;
+    justify-content: stretch;
+    padding: .625rem;
+    position: relative;
+
+    > * {
+        display: block;
+    }
+
+    > span {
+        margin-bottom: .2em;
+    }
+
+    /* TODO : Review the animation later */
+    /*
+    &:hover {
+        transform: translateY(-10px);
+    }
+    */
+}
+
+.letter--most-read {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    background-color: var(--light-grey);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &:before {
+        content: "99";
+        font-family: var(--ff-bold);
+        margin-bottom: 1.5rem;
+    }
+
+    &:after {
+        content: "66";
+        font-family: var(--ff-bold);
+        margin-top: 1.5rem;
+    }
+
+    > .letter__title {
+        margin: 0;
+    }
+}
+
+.letter__content {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* TODO : Animate this later on */
+.letter__more {
+    position: absolute;
+    bottom: .625rem;
+    left: .625rem;
+
+    &:before {
+        content: "—";
+        margin-right: .5rem;
     }
 }
