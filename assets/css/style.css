@@ -461,3 +461,56 @@ a {
         display: block;
     }
 }
+
+.workflow > .section__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.contact__email, .social__media {
+    margin: 1.25rem;
+}
+
+.contact__email {
+    text-decoration: underline;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.social__media {
+    display: flex;
+}
+
+.social__link {
+    padding: .875rem;
+
+    > a:hover {
+        opacity: .7;
+    }
+}
+
+.print {
+    margin: 3rem auto;
+}
+
+.button {
+    font-family: var(--ff-bold);
+    text-transform: uppercase;
+    font-size: .75rem;
+    letter-spacing: .15em;
+    line-height: 1em;
+    padding: .5rem 1rem;
+
+    &.button--primary{
+        border: 2px solid var(--white);
+
+        &:hover {
+            border: 2px solid var(--black);
+        }
+    }
+}
