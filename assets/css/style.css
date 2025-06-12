@@ -123,12 +123,16 @@ a {
 .h3 {
     font-size: 1.5rem;
     letter-spacing: .025rem;
-
 }
 
 .h4 {
     font-size: 1.25rem;
     letter-spacing: .1rem;
+}
+
+.h5 {
+    font-size: .875em;
+    letter-spacing: .15em;
 }
 
 .h6 {
@@ -409,5 +413,51 @@ a {
     &:before {
         content: "—";
         margin-right: .5rem;
+    }
+}
+
+.about-me {
+    width: 65%;
+    text-align: center;
+    color: var(--dark-grey);
+    margin: 1.875rem 1.25rem;
+}
+
+.success {
+    margin: 1.875rem 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 80%;
+}
+
+.success__title {
+    margin-bottom: 2.25rem;
+    letter-spacing: .135em;
+}
+
+.success__item {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    &.item--title-only {
+        gap: 0;
+    }
+}
+
+.item {
+    .item__title {
+        margin-bottom: .75rem;
+    }
+
+    .item__description {
+        font-family: var(--ff-secondary);
+        font-size: 1.125rem;
+        font-style: italic;
+    }
+
+    > * {
+        display: block;
     }
 }
