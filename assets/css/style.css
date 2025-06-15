@@ -156,6 +156,12 @@ a {
     color: var(--dark-grey);
 }
 
+.image {
+    /* TODO : Fix max-width */
+    max-width: 100%;
+    height: auto;
+}
+
 
 /* Custom Style */
 /* HEADER */
@@ -264,13 +270,6 @@ a {
     }
 }
 
-/*.section__content {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    align-items: center;*/
-/*    justify-content: center;*/
-/*}*/
-
 .service {
     display: flex;
     flex-direction: row;
@@ -297,25 +296,24 @@ a {
 .bio {
     padding: 2.5rem .625rem;
     display: flex;
+}
 
-    .bio__intro {
-        font-family: var(--ff-secondary);
-        font-weight: 400;
-        font-size: 1.5rem;
-        line-height: 2rem;
-        text-align: right;
+.bio__intro {
+    font-family: var(--ff-secondary);
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: right;
 
-        flex: 1;
-        padding: 1.25rem;
-        width: 30%;
-    }
+    flex: 1;
+    padding: 1.25rem;
+}
 
-    .bio__description {
-        flex: 2;
-        padding: 1.25rem;
-        column-count: 2;
-        column-gap: 2rem;
-    }
+.bio__description {
+    flex: 2;
+    padding: 1.25rem;
+    column-count: 2;
+    column-gap: 2rem;
 }
 
 .works {
@@ -455,6 +453,7 @@ a {
         font-family: var(--ff-secondary);
         font-size: 1.125rem;
         font-style: italic;
+        line-height: 1.25rem;
     }
 
     > * {
@@ -468,6 +467,10 @@ a {
     align-items: center;
     justify-content: center;
     gap: 5rem;
+}
+
+.workflow__image--vertical {
+    display: none;
 }
 
 .contact__email, .social__media {
@@ -512,5 +515,59 @@ a {
         &:hover {
             border: 2px solid var(--black);
         }
+    }
+}
+
+/* TODO : Viewport Breakpoint */
+/* Viewport Breakpoint */
+@media (max-width: 990px) {
+    .bio {
+        flex-direction: column;
+    }
+
+    .bio__intro {
+        flex: 2;
+        text-align: start;
+    }
+
+    .letters {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 2rem;
+    }
+
+    .letter--most-read {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+        margin: .625rem;
+        height: 24rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .service {
+        flex-direction: column;
+    }
+
+    .works {
+        grid-template-columns: 1fr;
+    }
+
+    .bio__description {
+        column-count: 1;
+    }
+
+    .success {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 6rem;
+    }
+
+    .workflow__image--horizontal {
+        display: none;
+    }
+
+    .workflow__image--vertical {
+        display: block;
     }
 }
